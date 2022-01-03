@@ -14,6 +14,10 @@ const PORT = process.env.PORT || 5000;
 // Routes
 app.use("/users", userRuotes);
 
+app.get("/test", (req, res) => {
+  res.sendStatus(200);
+});
+
 app.listen(PORT, () => {
   console.log("Server is running on port 5000");
 });
