@@ -18,6 +18,10 @@ app.get("/test", (req, res) => {
   res.sendStatus(200);
 });
 
+app.get("/heroku", (req, res) => {
+  res.status(200).send("Heroku is working");
+});
+
 app.listen(PORT, () => {
   console.log("Server is running on port 5000");
 });
