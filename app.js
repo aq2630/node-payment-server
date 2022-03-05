@@ -15,7 +15,7 @@ connectDb();
 app.use(cors());
 app.use(express.json());
 
-schedule.scheduleJob("0 22 22 5 * *", () => {
+schedule.scheduleJob("0 0 0 6 * *", () => {
   console.log("running a task every month");
   autoPaymentEntry();
 });
