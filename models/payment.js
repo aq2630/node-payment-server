@@ -1,12 +1,12 @@
 const mongoose = require("mongoose");
 
-const userSchema = new mongoose.Schema(
+const addPayment = new mongoose.Schema(
   {
-    phone: {
+    amount: {
       type: String,
       required: true,
     },
-    password: {
+    userId: {
       type: String,
       required: true,
     },
@@ -16,4 +16,4 @@ const userSchema = new mongoose.Schema(
   }
 );
 
-module.exports = mongoose.model("User", userSchema);
+module.exports = mongoose.model("Payment", addPayment);
